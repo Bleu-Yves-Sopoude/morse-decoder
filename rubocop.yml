@@ -4,6 +4,8 @@ AllCops:
     - 'Guardfile'
     - 'Rakefile'
     - 'node_modules/**/*'
+    - 'Gemfile'
+    - 'Gemfile.lock'
 
   DisplayCopNames: true
 

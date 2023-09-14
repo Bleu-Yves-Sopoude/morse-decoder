@@ -1,4 +1,5 @@
-# * morse_decoder class
+# frozen_string_literal: true
+
 class MorseDecoder
   def initialize
     @morse_map = {
