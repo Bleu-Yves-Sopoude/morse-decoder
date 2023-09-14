@@ -1,4 +1,4 @@
-
+# class MorseDecoder
 class MorseDecoder
   def initialize
     @morse_map = {
