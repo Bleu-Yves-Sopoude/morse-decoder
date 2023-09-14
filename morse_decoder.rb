@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # * morse_decoder class
 class MorseDecoder
   def initialize
