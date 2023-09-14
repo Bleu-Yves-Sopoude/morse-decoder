@@ -1,5 +1,4 @@
-# frozen_string_literal: false
-
+# frozen_string_literal: true
 
 # * morse_decoder class
 class MorseDecoder
@@ -7,7 +6,7 @@ class MorseDecoder
     @morse_map = {
       "A": '.-', "B": '-...', "C": '-.-.', "D": '-..', "E": '.', "F": '..-.', "G": '--.',
       "H": '....', "I": '..', "J": '.---', "K": '-.-',
-      "L": '.-..', "M": '--', "N": '-.', "O": '---', "P": '.--.', "Q": '--.-', "R": '.-.', 
+      "L": '.-..', "M": '--', "N": '-.', "O": '---', "P": '.--.', "Q": '--.-', "R": '.-.',
       "S": '...', "T": '-',
       "U": '..-', "V": '...-', "W": '.--', "X": '-..-', "Y": '-.--', "Z": '--..'
     }
@@ -19,10 +18,10 @@ class MorseDecoder
   end
 
   def decode_word(string)
-    ans_string = ''
     output_l1 = string.strip.split(/\s/)
-    output_l1.each do |c|
-      ans_string << decode(c).to_s if c != ' '
+    ans_string = String.new
+    output_l1.each do |char|
+      ans_string << decode(char).to_s
     end
     puts ans_string
   end
